@@ -1,0 +1,155 @@
+/*soft reset do css*/
+* {
+    margin: 100;
+    padding: 20;
+    box-sizing: border-box;
+  
+}
+  body {
+    background-image:none;
+    font-family: Arial;
+    font-size: 12px;
+    color:whitesmoke;
+  }
+
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+  @media (min-width: 400px) {
+      body {
+      font-size: 14px;
+      background-color:black;
+    }
+}
+  
+  /* breakpoint */
+
+  @media (min-width: 600px) {
+     body {
+         font-size: 18px;
+    }
+
+  }
+  
+  /* breakpoint */
+  @media (min-width: 1200px) {
+      body {
+          font-size: 20px;
+          background-image: none;
+          background-color:#00156a;
+    }
+  }
+  
+  header {
+      height: 55vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .menu {
+      background-color: white;
+      position: fixed;
+      width: 100vw;
+      top: 0;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+   list-style: none; 
+  }
+  
+  .menu a {
+    
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle, 
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+.site-title {
+  font-size: 4em;
+  font-family: Helvetica;
+}
+
+.site-subtitle {
+ font-style: arial;
+ font-family: 'Press Start 2P', cursive;
+ line-height: 1.8em;
+}
+
+.portfolio {
+  padding: 2em;
+  height: 2vh;
+
+}
+
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.9em;
+  margin: 10em;
+  font-size: 2em;
+}
+
+
+.portfolio .grid {
+  display: grid ;
+  gap: 4em;  
+  grid-template-columns: 240px 500px 300px ;
+}
+
+
+.portfolio figure {
+    text-align:center ;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 250px 250px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+
+   }
+}
+
+.portfolio figure {
+     text-align: center;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 240px;
+    
+  }
+
+  figure:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+  
+
+
